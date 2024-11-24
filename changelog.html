@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Changelog</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .changelog {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 15px 0;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+        .changelog:hover {
+            transform: translateY(-5px);
+        }
+        .changelog b {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #2980b9;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        li::before {
+            content: '•';
+            color: #3498db;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Changelog</h1>
+    </header>
+    <main>
+        <section>
+            <div class="changelog">
+                <b>23/11/2024 (universal9611)</b>
+                <ul>
+                    <li>Implement OTA</li>
+                    <li>universal9611: Init swappiness set to lower value of 60</li>
+                    <li>universal9611: Move FUSE passthrough prop to product</li>
+                    <li>universal9611: Use FUSE passthrough by default</li>
+                    <li>universal9611: Add system_ext to dynamic partitions list</li>
+                </ul>
+            </div>
+            <div class="changelog">
+                <b>11/11/2024 (universal9611)</b>
+                <ul>
+                    <li>Initial A15 release</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
