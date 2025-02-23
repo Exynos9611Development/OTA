@@ -1,0 +1,49 @@
+name: Build ROM
+
+jobs:
+  build:
+    runs-on: self-hosted
+    strategy:
+      fail-fast: false
+      matrix:
+        device: [a51]
+        rom: [crdroid]
+    name: "Building ${{ matrix.rom }} for ${{ matrix.device }}"
+
+    steps:
+      - name: Install dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y \
+            bc bison build-essential ccache curl flex g++-multilib \
+            gcc-multilib git git-lfs gnupg gperf imagemagick \
+            lib32ncurses-dev lib32readline-dev lib32z1-dev \
+            liblz4-tool libncurses6 libncurses-dev libsdl1.2-dev \
+            libssl-dev libwxgtk3.2-dev libxml2 libxml2-utils \
+            lzop pngcrush rsync squashfs-tools xsltproc zip zlib1g-dev
+          mkdir -p ~/bin
+          curl -o ~/bin/repo https://storage.googleapis.com/git-repo-downloads/repo
+          chmod a+x ~/bin/repo
+          export PATH=~/bin:$PATH
+
+      - name: Sync ROM
+        run: |
+          mkdir crd && cd crd
+          repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs --depth=1
+          git clone https://github.com/Exynos9611Development/local_manifests .repo/local_manifests
+          repo sync -j8
+          repo sync -j4
+          git clone https://github.com/Exynos9611Development/android_vendor_lineage-priv vendor/lineage-priv
+
+      - name: Build ROM
+        run: |
+          source build/envsetup.sh
+          brunch ${{ matrix.device }} user
+
+      - name: Upload to Telegram
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.CHAT_ID }}
+          token: ${{ secrets.BOT_TOKEN }}
+          document: out/target/product/*/crdroid*.zip
+          message: "Crdroid Build for ${{ matrix.device }} completed"
