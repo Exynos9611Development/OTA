@@ -1,11 +1,11 @@
 {
   "response": [
     {
-      "datetime": 1741191989,
+      "datetime": 1741208810,
       "filename": "lineage-22.1-20250305-UNOFFICIAL-m31.zip",
-      "id": "11c5518e5f4ab03fc4ce0169e5df785ba909a3de730c27dae230d5246440b937",
+      "id": "4060f6c1985ebc8a871199c477c1014e8e4b19df25f73d9c7a0d1136f353a004",
       "romtype": "UNOFFICIAL",
-      "size": 982019644,
+      "size": 982017127,
       "url": "https://github.com/Exynos9611Development/OTA/releases/download/20250305/lineage-22.1-20250305-UNOFFICIAL-m31.zip",
       "version": "22.1"
     }
