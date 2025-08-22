@@ -1,12 +1,12 @@
 {
   "response": [
     {
-      "datetime": 1749761071,
-      "filename": "lineage-22.2-20250612-UNOFFICIAL-m31s.zip",
-      "id": "43ccde4da7760fa22dda95dc1409dc516081d6fcbd2fb4018df872c70c01ec30",
+      "datetime": 1755857123,
+      "filename": "lineage-22.2-20250822-UNOFFICIAL-m31s.zip",
+      "id": "ed402f86f43bd7546f7f5d5b3771209c33c7bdc260091bf6122dc7c1210621d7",
       "romtype": "UNOFFICIAL",
-      "size": 1001657002,
-      "url": "https://github.com/Exynos9611Development/OTA/releases/download/20250612/lineage-22.2-20250612-UNOFFICIAL-m31s.zip",
+      "size": 1010286175,
+      "url": "https://github.com/Exynos9611Development/OTA/releases/download/20250822/lineage-22.2-20250822-UNOFFICIAL-m31s.zip",
       "version": "22.2"
     }
   ]
