@@ -1,12 +1,12 @@
 {
   "response": [
     {
-      "datetime": 1755853676,
-      "filename": "lineage-22.2-20250822-UNOFFICIAL-a51.zip",
-      "id": "7695f89414463b3c7127c14f2ec5d9b73d83034e2898d01426dcc741c52a9ba8",
+      "datetime": 1758381352,
+      "filename": "lineage-22.2-20250920-UNOFFICIAL-a51.zip",
+      "id": "47dae5984dc267a76fe27126a2dba67f2c7cf83ba095401d20289f75fff83e0e",
       "romtype": "UNOFFICIAL",
-      "size": 1015189298,
-      "url": "https://github.com/Exynos9611Development/OTA/releases/download/20250822/lineage-22.2-20250822-UNOFFICIAL-a51.zip",
+      "size": 1017574267,
+      "url": "https://github.com/Exynos9611Development/OTA/releases/download/20250920/lineage-22.2-20250920-UNOFFICIAL-a51.zip",
       "version": "22.2"
     }
   ]
