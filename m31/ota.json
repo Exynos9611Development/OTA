@@ -1,12 +1,12 @@
 {
   "response": [
     {
-      "datetime": 1761085471,
-      "filename": "lineage-23.0-20251021-UNOFFICIAL-m31.zip",
-      "id": "e3cf50c19e7fa808e03765aa9ca6c124ca69fee9c6527030679716e003fbc98b",
+      "datetime": 1763467241,
+      "filename": "lineage-23.0-20251118-UNOFFICIAL-m31.zip",
+      "id": "61fa30dcb2f503efb3e53b4812f2c76ea35b76c48839308b15c2e1ecfef21700",
       "romtype": "UNOFFICIAL",
-      "size": 1056112321,
-      "url": "https://github.com/Exynos9611Development/OTA/releases/download/20251021/lineage-23.0-20251021-UNOFFICIAL-m31.zip",
+      "size": 1056073508,
+      "url": "https://github.com/Exynos9611Development/OTA/releases/download/20251118/lineage-23.0-20251118-UNOFFICIAL-m31.zip",
       "version": "23.0"
     }
   ]
